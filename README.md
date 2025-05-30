@@ -1,12 +1,12 @@
-# 🚗 Ridercar - Ridex
+# 🚗 Ridercar
 
-**Ridex** é um site de aluguel de carros totalmente responsivo, projetado para funcionar perfeitamente em todos os dispositivos. Construído com **HTML**, **CSS** e **JavaScript**, o projeto oferece uma interface moderna e intuitiva para locação de veículos.
+**Ridecar** é um site de aluguel de carros totalmente responsivo, projetado para funcionar perfeitamente em todos os dispositivos. Construído com **HTML**, **CSS** e **JavaScript**, o projeto oferece uma interface moderna e intuitiva para locação de veículos.
 
 ## 📸 Demonstração
 
 ![Ridex Preview](https://i.gifer.com/VdgG.gif)
 
-> Você pode conferir a versão ao vivo aqui: [🔗 Acessar Ridex](https://faellim.github.io/ridercar/)
+> Você pode conferir a versão ao vivo aqui: [🔗 Acessar Ridecar](https://faellim.github.io/ridercar/)
 
 ## 🧰 Tecnologias Utilizadas
 
