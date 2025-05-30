@@ -4,7 +4,7 @@
 
 ## 📸 Demonstração
 
-![Ridex Preview](https://i.gifer.com/VdgG.gif)
+![Ridex Preview](assets/images/logo.svg)
 
 > Você pode conferir a versão ao vivo aqui: [🔗 Acessar Ridecar](https://faellim.github.io/ridercar/)
 
