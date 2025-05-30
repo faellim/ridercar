@@ -22,19 +22,6 @@
 - Formulário de contato/suporte
 - Navegação fluida com menu interativo
 
-## 📁 Estrutura de Pastas
-Ridercar/
-├── index.html
-├── favicon.svg
-├── assets/
-├── css/
-│ └── style.css
-├── js/
-│ └── script.js
-├── images/
-│ └── (imagens dos carros e layout)
-
-
 ## 🚀 Como Usar
 
 Clone o repositório:
