@@ -81,7 +81,7 @@ This project was designed to showcase:
     ├── js/script.js
     ├── js/catalog.js
     └── images/
-
+```
 ---
 
 ## 📄 License
