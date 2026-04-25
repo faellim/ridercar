@@ -5,7 +5,7 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 
-**RiderCar is a front-end car rental application built for portfolio purposes.**  
+**RiderCar is a front-end car rental application built for rental porpuses.**  
 It transforms a simple static landing page into a more realistic product experience, focusing on UX, responsiveness, clean structure, and interactive features.
 
 ---
