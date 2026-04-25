@@ -88,11 +88,3 @@ This project was designed to showcase:
 
 This project is licensed under the MIT License.
 See the full license here: [LICENSE](./LICENSE)
-
-
-* Track personal expenses with structured data
-* Organize spending into custom categories
-* Analyze monthly summaries and breakdowns
-* Interact through both a web dashboard and CLI
-
-It emphasizes clean architecture, separation of concerns, and maintainable code design.
