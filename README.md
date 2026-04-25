@@ -6,7 +6,7 @@ RiderCar e um projeto front-end de locadora de carros criado para portfolio. A p
 
 ![Preview da homepage da RiderCar](assets/images/ridercar-scroll.gif)
 
-Demo: [rider-car.vercel.app](rider-car.vercel.app)
+Demo: [rider-car.vercel.app](https://rider-car.vercel.app)
 
 ## Sobre o projeto
 
