@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogo RiderCar | 25 veiculos para aluguel e simulacao</title>
+  <meta
+    name="description"
+    content="Catalogo completo da RiderCar com 25 veiculos, filtros por marca, preco e ano, favoritos e simulacao de aluguel em uma interface moderna.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Catalogo RiderCar | Frota completa para portfolio">
+  <meta
+    property="og:description"
+    content="Explore 25 veiculos em um catalogo responsivo com filtros, modal de reserva e interacoes reais de portfolio.">
+  <meta property="og:image" content="./assets/images/preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+
+  <header class="header" data-header>
+    <div class="container">
+      <div class="overlay" data-overlay></div>
+
+      <a href="index.html" class="logo" aria-label="RiderCar, voltar para home">
+        <img src="./assets/images/logo.svg" alt="Logotipo RiderCar">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+          <li><a href="index.html" class="navbar-link">Home</a></li>
+          <li><a href="#catalogo" class="navbar-link" data-nav-link>Catalogo</a></li>
+          <li><a href="#filtros" class="navbar-link" data-nav-link>Filtros</a></li>
+          <li><a href="#duvidas" class="navbar-link" data-nav-link>Destaques</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="header-contact">
+          <a href="tel:+556243211234" class="contact-link">(62) 4321-1234</a>
+          <span class="contact-time">Seg a Sab, 9h as 18h</span>
+        </div>
+
+        <button type="button" class="btn btn-secondary theme-toggle" data-theme-toggle aria-label="Alternar tema">
+          <ion-icon name="moon-outline"></ion-icon>
+          <span>Modo escuro</span>
+        </button>
+
+        <a href="index.html#contact" class="btn">
+          <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+          <span>Solicitar simulacao</span>
+        </a>
+
+        <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Alternar menu">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section catalog-hero" id="catalogo">
+      <div class="container catalog-hero-grid">
+        <div class="catalog-hero-content">
+          <p class="section-eyebrow">Catalogo completo</p>
+          <h1 class="h1">Uma frota maior para deixar o projeto com cara de produto real.</h1>
+          <p class="hero-text">
+            Esta pagina expande a experiencia da home com 25 veiculos, filtros combinados, favoritos e simulacao de
+            aluguel. A ideia foi transformar o antigo botao de destaque em uma navegacao de verdade.
+          </p>
+        </div>
+
+        <div class="catalog-summary">
+          <div class="summary-card">
+            <strong data-results-count>25 veiculos</strong>
+            <span data-results-message>Catalogo atualizado com base nos filtros selecionados.</span>
+          </div>
+          <div class="summary-card">
+            <strong>5 cidades</strong>
+            <span>Goiania, Brasilia, Sao Paulo, Rio de Janeiro e Curitiba.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section catalog-filters" id="filtros">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-eyebrow">Busca inteligente</p>
+          <h2 class="h2 section-title">Filtre por marca, preco e ano</h2>
+          <p class="section-text">
+            Use os filtros abaixo para navegar pelo catalogo. Tambem deixei atalhos rapidos por marca para a experiencia
+            parecer mais completa.
+          </p>
+        </div>
+
+        <form class="catalog-filter-panel" data-catalog-filter>
+          <div class="catalog-filter-grid">
+            <label>
+              <span>Marca ou modelo</span>
+              <input type="text" name="query" placeholder="Ex.: Audi, SUV, Executivo">
+            </label>
+            <label>
+              <span>Preco maximo</span>
+              <input type="number" name="price" placeholder="Ex.: 500">
+            </label>
+            <label>
+              <span>Ano minimo</span>
+              <input type="number" name="year" placeholder="Ex.: 2021">
+            </label>
+            <label>
+              <span>Marca</span>
+              <select name="brand">
+                <option value="">Todas</option>
+                <option value="Audi">Audi</option>
+                <option value="BMW">BMW</option>
+                <option value="Cadillac">Cadillac</option>
+                <option value="Chevrolet">Chevrolet</option>
+                <option value="Citroen">Citroen</option>
+                <option value="Ford">Ford</option>
+                <option value="GMC">GMC</option>
+                <option value="Honda">Honda</option>
+                <option value="Hyundai">Hyundai</option>
+                <option value="Jeep">Jeep</option>
+                <option value="Jaguar">Jaguar</option>
+                <option value="Kia">Kia</option>
+                <option value="Lexus">Lexus</option>
+                <option value="Mercedes-Benz">Mercedes-Benz</option>
+                <option value="Nissan">Nissan</option>
+                <option value="Porsche">Porsche</option>
+                <option value="Renault">Renault</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Volkswagen">Volkswagen</option>
+                <option value="Volvo">Volvo</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="catalog-filter-actions">
+            <button type="submit" class="btn">Aplicar filtros</button>
+            <button type="button" class="btn btn-secondary" data-reset-filters>Limpar busca</button>
+          </div>
+        </form>
+
+        <div class="filter-chip-row" data-brand-chips></div>
+      </div>
+    </section>
+
+    <section class="section featured-car">
+      <div class="container">
+        <ul class="featured-car-list featured-car-list--catalog" data-catalog-list></ul>
+
+        <div class="empty-state" data-empty-state hidden>
+          <h3 class="h3">Nenhum veiculo encontrado</h3>
+          <p>Tente remover algum filtro ou buscar por outra marca, faixa de preco ou categoria.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="duvidas">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-eyebrow">Diferenciais</p>
+          <h2 class="h2 section-title">O que essa expansao agrega ao portfolio</h2>
+        </div>
+
+        <div class="about-grid">
+          <article class="about-card">
+            <ion-icon name="albums-outline"></ion-icon>
+            <h3 class="h3">Mais escala visual</h3>
+            <p>O catalogo maior melhora muito a percepcao de produto real e deixa o projeto menos limitado.</p>
+          </article>
+
+          <article class="about-card">
+            <ion-icon name="options-outline"></ion-icon>
+            <h3 class="h3">Filtro combinado</h3>
+            <p>Pesquisa textual, ano, preco e marca funcionando juntos para mostrar dominio de front-end.</p>
+          </article>
+
+          <article class="about-card">
+            <ion-icon name="heart-outline"></ion-icon>
+            <h3 class="h3">Interacoes persistentes</h3>
+            <p>Favoritos e tema continuam salvos, reforcando a sensacao de experiencia consistente entre paginas.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="./assets/images/logo.svg" alt="Logotipo RiderCar no rodape">
+          </a>
+          <p class="footer-text">
+            Catalogo expandido da RiderCar para portfolio, com filtros, favoritos, 25 veiculos e simulacao de reserva.
+          </p>
+        </div>
+
+        <ul class="footer-list">
+          <li><p class="footer-list-title">Navegacao</p></li>
+          <li><a href="index.html" class="footer-link">Home</a></li>
+          <li><a href="#catalogo" class="footer-link">Catalogo</a></li>
+          <li><a href="#filtros" class="footer-link">Filtros</a></li>
+        </ul>
+
+        <ul class="footer-list">
+          <li><p class="footer-list-title">Acoes</p></li>
+          <li><a href="index.html#contact" class="footer-link">Solicitar simulacao</a></li>
+          <li><a href="index.html#featured-car" class="footer-link">Ver destaques</a></li>
+          <li><a href="index.html" class="footer-link">Voltar para home</a></li>
+        </ul>
+
+        <ul class="footer-list footer-cities">
+          <li><p class="footer-list-title">Cidades simuladas</p></li>
+          <li><span class="footer-link">Goiania</span></li>
+          <li><span class="footer-link">Brasilia</span></li>
+          <li><span class="footer-link">Sao Paulo</span></li>
+          <li><span class="footer-link">Rio de Janeiro</span></li>
+          <li><span class="footer-link">Curitiba</span></li>
+          <li><span class="footer-link">Belo Horizonte</span></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <ul class="social-list">
+          <li><a href="https://www.instagram.com/" class="social-link" target="_blank" rel="noreferrer" aria-label="Instagram"><ion-icon name="logo-instagram"></ion-icon></a></li>
+          <li><a href="https://www.linkedin.com/" class="social-link" target="_blank" rel="noreferrer" aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+          <li><a href="mailto:contato@ridercar.dev" class="social-link" aria-label="Enviar e-mail"><ion-icon name="mail-outline"></ion-icon></a></li>
+        </ul>
+
+        <p class="copyright">
+          &copy; <span data-current-year>2026</span> <a href="index.html">RiderCar</a>. Projeto de portfolio com foco em UX e front-end.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" data-modal hidden>
+    <div class="modal-backdrop" data-modal-close></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="catalog-modal-title">
+      <button type="button" class="modal-close" data-modal-close aria-label="Fechar simulacao">
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+      <p class="section-eyebrow">Simulacao de aluguel</p>
+      <h2 class="h2" id="catalog-modal-title">Reserva iniciada</h2>
+      <div class="modal-content" data-modal-content></div>
+      <a href="index.html#contact" class="btn">Ir para contato</a>
+    </div>
+  </div>
+
+  <div class="toast" data-toast aria-live="polite"></div>
+
+  <script src="./assets/js/cars.js"></script>
+  <script src="./assets/js/catalog.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

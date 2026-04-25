@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RiderCar | Locadora de carros moderna para sua proxima viagem</title>
+  <meta
+    name="description"
+    content="Projeto front-end de locadora de carros com foco em responsividade, filtros de busca, simulacao de reserva, modo escuro e experiencia moderna para portfolio.">
+  <meta name="theme-color" content="#1d4ed8">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="RiderCar | Locadora de carros moderna para portfolio">
+  <meta
+    property="og:description"
+    content="Explore uma landing page de locadora com busca interativa, carros renderizados via JavaScript, simulacao de aluguel e layout responsivo.">
+  <meta property="og:image" content="./assets/images/preview.png">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="RiderCar | Locadora de carros moderna para portfolio">
+  <meta
+    name="twitter:description"
+    content="Projeto front-end responsivo de aluguel de carros com SEO basico, dark mode e interacoes reais.">
+
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+
+  <header class="header" data-header>
+    <div class="container">
+      <div class="overlay" data-overlay></div>
+
+      <a href="#home" class="logo" aria-label="RiderCar, voltar ao inicio">
+        <img src="./assets/images/logo.svg" alt="Logotipo RiderCar">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+          <li><a href="#home" class="navbar-link" data-nav-link>Inicio</a></li>
+          <li><a href="#featured-car" class="navbar-link" data-nav-link>Frota</a></li>
+          <li><a href="catalogo.html" class="navbar-link">Catalogo</a></li>
+          <li><a href="#about" class="navbar-link" data-nav-link>Sobre</a></li>
+          <li><a href="#contact" class="navbar-link" data-nav-link>Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="header-contact">
+          <a href="tel:+556243211234" class="contact-link">(62) 4321-1234</a>
+          <span class="contact-time">Seg a Sab, 9h as 18h</span>
+        </div>
+
+        <button type="button" class="btn btn-secondary theme-toggle" data-theme-toggle aria-label="Alternar tema">
+          <ion-icon name="moon-outline"></ion-icon>
+          <span>Modo escuro</span>
+        </button>
+
+        <a href="catalogo.html" class="btn" aria-label="Abrir catalogo completo">
+          <ion-icon name="car-sport-outline"></ion-icon>
+          <span>Catalogo completo</span>
+        </a>
+
+        <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Alternar menu">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <section class="section hero" id="home">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <p class="section-eyebrow">Locacao premium com experiencia digital</p>
+            <h1 class="h1 hero-title">Alugue o carro ideal para trabalho, lazer ou viagens em poucos minutos.</h1>
+            <p class="hero-text">
+              A RiderCar e um projeto front-end de locadora criado para portfolio, com foco em layout profissional,
+              responsividade, microinteracoes e uma jornada clara de busca e reserva.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#featured-car" class="btn">Ver destaques</a>
+              <button type="button" class="btn btn-secondary" data-open-contact>
+                <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                <span>Falar com consultor</span>
+              </button>
+            </div>
+
+            <ul class="hero-highlights" aria-label="Indicadores da RiderCar">
+              <li>
+                <strong>25 modelos</strong>
+                <span>no catalogo expandido</span>
+              </li>
+              <li>
+                <strong>24h</strong>
+                <span>suporte para reservas</span>
+              </li>
+              <li>
+                <strong>5 cidades</strong>
+                <span>com retirada agendada</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-banner" role="img" aria-label="SUV branco em destaque para locacao"></div>
+            <div class="hero-card">
+              <p class="hero-card-label">Reserva mais procurada</p>
+              <h2>BMW Serie 3</h2>
+              <p>Retirada em Goiania, diaria estimada a partir de R$ 289.</p>
+            </div>
+          </div>
+
+          <form class="hero-form" data-filter-form>
+            <div class="input-wrapper">
+              <label for="input-brand" class="input-label">Marca ou modelo</label>
+              <input type="text" name="query" id="input-brand" class="input-field" placeholder="Ex.: BMW ou SUV">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="input-price" class="input-label">Orcamento mensal maximo</label>
+              <input type="number" name="price" id="input-price" class="input-field" placeholder="Ex.: 500">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="input-year" class="input-label">Ano minimo</label>
+              <input type="number" name="year" id="input-year" class="input-field" placeholder="Ex.: 2020">
+            </div>
+
+            <button type="submit" class="btn">Buscar</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-eyebrow">Sobre o projeto</p>
+            <h2 class="h2 section-title">Um front-end de locadora pensado para portfolio e evolucao tecnica</h2>
+            <p class="section-text">
+              Este projeto apresenta a interface de uma locadora de carros com foco em responsividade, organizacao de
+              codigo, experiencia do usuario e base escalavel para novas features. A proposta e demonstrar como uma
+              landing page estatica pode ganhar cara de produto real.
+            </p>
+          </div>
+
+          <div class="about-grid">
+            <article class="about-card">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+              <h3 class="h3">Experiencia responsiva</h3>
+              <p>Layout adaptado para mobile, tablet e desktop com hierarquia visual mais clara e CTA consistente.</p>
+            </article>
+
+            <article class="about-card">
+              <ion-icon name="flash-outline"></ion-icon>
+              <h3 class="h3">Interacoes reais</h3>
+              <p>Busca com filtros, modal de reserva, favoritos, modo escuro e mensagens simuladas sem backend.</p>
+            </article>
+
+            <article class="about-card">
+              <ion-icon name="layers-outline"></ion-icon>
+              <h3 class="h3">Catalogo maior</h3>
+              <p>Agora o projeto conta com pagina de catalogo completa, 25 veiculos e navegacao dedicada.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section featured-car" id="featured-car">
+        <div class="container">
+          <div class="title-wrapper">
+            <div>
+              <p class="section-eyebrow">Frota em destaque</p>
+              <h2 class="h2 section-title">Escolha um modelo alinhado ao seu perfil de uso</h2>
+            </div>
+
+            <button type="button" class="featured-car-link" data-show-all>
+              <span>Ver todos os veiculos</span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+          </div>
+
+          <p class="filter-feedback" data-filter-feedback>
+            Exibindo os principais destaques da frota. Veja o catalogo completo para explorar mais opcoes.
+          </p>
+
+          <ul class="featured-car-list" data-car-list></ul>
+        </div>
+      </section>
+
+      <section class="section get-start" id="how-it-works">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-eyebrow">Como funciona</p>
+            <h2 class="h2 section-title">Comece em 4 passos simples</h2>
+            <p class="section-text">
+              A jornada de aluguel foi reescrita com explicacoes reais para deixar a experiencia mais crivel e
+              profissional.
+            </p>
+          </div>
+
+          <ul class="get-start-list">
+            <li>
+              <article class="get-start-card">
+                <div class="card-icon icon-1">
+                  <ion-icon name="document-text-outline"></ion-icon>
+                </div>
+                <h3 class="card-title">Informe o que voce precisa</h3>
+                <p class="card-text">
+                  Defina marca, faixa de preco, ano ou categoria para encontrar opcoes alinhadas ao seu orcamento e ao
+                  tipo de trajeto.
+                </p>
+                <a href="catalogo.html" class="card-link">Abrir catalogo</a>
+              </article>
+            </li>
+
+            <li>
+              <article class="get-start-card">
+                <div class="card-icon icon-2">
+                  <ion-icon name="car-outline"></ion-icon>
+                </div>
+                <h3 class="card-title">Compare os modelos disponiveis</h3>
+                <p class="card-text">
+                  Analise capacidade, combustivel, cambio, ano e preco mensal para entender qual carro entrega o melhor
+                  custo-beneficio.
+                </p>
+              </article>
+            </li>
+
+            <li>
+              <article class="get-start-card">
+                <div class="card-icon icon-3">
+                  <ion-icon name="chatbubbles-outline"></ion-icon>
+                </div>
+                <h3 class="card-title">Simule a reserva com um consultor</h3>
+                <p class="card-text">
+                  Ao clicar em "Alugar agora", o site abre uma simulacao com o modelo escolhido para iniciar o contato e
+                  validar disponibilidade.
+                </p>
+              </article>
+            </li>
+
+            <li>
+              <article class="get-start-card">
+                <div class="card-icon icon-4">
+                  <ion-icon name="checkmark-done-outline"></ion-icon>
+                </div>
+                <h3 class="card-title">Confirme retirada e periodo</h3>
+                <p class="card-text">
+                  Depois da simulacao, basta revisar os dados, combinar retirada e finalizar a proposta de aluguel.
+                </p>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="container contact-grid">
+          <div class="contact-content">
+            <p class="section-eyebrow">Atendimento</p>
+            <h2 class="h2 section-title">Receba uma simulacao personalizada para sua proxima locacao</h2>
+            <p class="section-text">
+              Este formulario demonstra uma etapa de contato de uma locadora real. O envio e simulado para portfolio,
+              mas toda a interacao foi pensada para parecer uma experiencia de produto.
+            </p>
+          </div>
+
+          <form class="contact-form" data-contact-form>
+            <label>
+              <span>Nome</span>
+              <input type="text" name="name" placeholder="Seu nome completo" required>
+            </label>
+            <label>
+              <span>E-mail</span>
+              <input type="email" name="email" placeholder="voce@exemplo.com" required>
+            </label>
+            <label>
+              <span>Cidade de retirada</span>
+              <input type="text" name="city" placeholder="Ex.: Goiania" required>
+            </label>
+            <label>
+              <span>Mensagem</span>
+              <textarea name="message" rows="4" placeholder="Quero simular um SUV para viagem de fim de semana."></textarea>
+            </label>
+            <button type="submit" class="btn">Solicitar simulacao</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="section blog" id="blog">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-eyebrow">Conteudo</p>
+            <h2 class="h2 section-title">Artigos para apoiar a decisao de aluguel</h2>
+          </div>
+
+          <ul class="blog-list has-scrollbar">
+            <li>
+              <article class="blog-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/blog-1.jpg" alt="Equipe RiderCar reunida em um escritorio moderno" loading="lazy" class="w-100">
+                  <span class="btn card-badge">Mercado</span>
+                </figure>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Como escolher um carro executivo para viagens corporativas</h3>
+                  <div class="card-meta">
+                    <div class="publish-date">
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="2026-03-14">14 de marco de 2026</time>
+                    </div>
+                    <div class="comments">
+                      <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                      <data value="18">18</data>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </li>
+
+            <li>
+              <article class="blog-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/blog-2.jpg" alt="Veiculo em manutencao preventiva antes da locacao" loading="lazy" class="w-100">
+                  <span class="btn card-badge">Operacao</span>
+                </figure>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Checklist rapido antes de retirar um carro alugado</h3>
+                  <div class="card-meta">
+                    <div class="publish-date">
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="2026-02-28">28 de fevereiro de 2026</time>
+                    </div>
+                    <div class="comments">
+                      <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                      <data value="26">26</data>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </li>
+
+            <li>
+              <article class="blog-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/blog-3.jpg" alt="Painel com indicadores de idade media da frota" loading="lazy" class="w-100">
+                  <span class="btn card-badge">Analise</span>
+                </figure>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Por que uma frota atualizada melhora conforto, consumo e seguranca</h3>
+                  <div class="card-meta">
+                    <div class="publish-date">
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="2026-01-12">12 de janeiro de 2026</time>
+                    </div>
+                    <div class="comments">
+                      <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                      <data value="31">31</data>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <img src="./assets/images/logo.svg" alt="Logotipo RiderCar no rodape">
+          </a>
+          <p class="footer-text">
+            RiderCar e um projeto front-end de locadora de carros desenvolvido para portfolio, destacando design
+            responsivo, interatividade e organizacao de codigo.
+          </p>
+        </div>
+
+        <ul class="footer-list">
+          <li><p class="footer-list-title">Navegacao</p></li>
+          <li><a href="#about" class="footer-link">Sobre o projeto</a></li>
+          <li><a href="#featured-car" class="footer-link">Frota</a></li>
+          <li><a href="catalogo.html" class="footer-link">Catalogo</a></li>
+          <li><a href="#contact" class="footer-link">Contato</a></li>
+        </ul>
+
+        <ul class="footer-list">
+          <li><p class="footer-list-title">Acoes</p></li>
+          <li><button type="button" class="footer-link footer-action" data-show-all>Ver todos os carros</button></li>
+          <li><button type="button" class="footer-link footer-action" data-open-contact>Solicitar simulacao</button></li>
+          <li><button type="button" class="footer-link footer-action" data-scroll-top>Voltar ao topo</button></li>
+        </ul>
+
+        <ul class="footer-list footer-cities">
+          <li><p class="footer-list-title">Cidades simuladas</p></li>
+          <li><span class="footer-link">Goiania</span></li>
+          <li><span class="footer-link">Brasilia</span></li>
+          <li><span class="footer-link">Sao Paulo</span></li>
+          <li><span class="footer-link">Rio de Janeiro</span></li>
+          <li><span class="footer-link">Belo Horizonte</span></li>
+          <li><span class="footer-link">Curitiba</span></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <ul class="social-list">
+          <li><a href="https://www.instagram.com/" class="social-link" target="_blank" rel="noreferrer" aria-label="Instagram"><ion-icon name="logo-instagram"></ion-icon></a></li>
+          <li><a href="https://www.linkedin.com/" class="social-link" target="_blank" rel="noreferrer" aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+          <li><a href="mailto:contato@ridercar.dev" class="social-link" aria-label="Enviar e-mail"><ion-icon name="mail-outline"></ion-icon></a></li>
+        </ul>
+
+        <p class="copyright">
+          &copy; <span data-current-year>2026</span> <a href="#home">RiderCar</a>. Projeto de portfolio com foco em UX e front-end.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" data-modal hidden>
+    <div class="modal-backdrop" data-modal-close></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button type="button" class="modal-close" data-modal-close aria-label="Fechar simulacao">
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+      <p class="section-eyebrow">Simulacao de aluguel</p>
+      <h2 class="h2" id="modal-title">Reserva iniciada</h2>
+      <div class="modal-content" data-modal-content></div>
+      <button type="button" class="btn" data-open-contact>Ir para contato</button>
+    </div>
+  </div>
+
+  <div class="toast" data-toast aria-live="polite"></div>
+
+  <script src="./assets/js/cars.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
