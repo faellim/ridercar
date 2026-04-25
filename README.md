@@ -1,119 +1,83 @@
-# RiderCar
+# 🚗 RiderCar
 
-RiderCar e um projeto front-end de locadora de carros criado para portfolio. A proposta e transformar uma landing page estatica em uma experiencia mais profissional, com foco em responsividade, UX, organizacao de codigo, SEO basico e interacoes que simulam um fluxo real de aluguel.
+![HTML](https://img.shields.io/badge/HTML-5-orange)
+![CSS](https://img.shields.io/badge/CSS-3-blue)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
+![Status](https://img.shields.io/badge/Status-Completed-success)
 
-## Preview
+**RiderCar is a front-end car rental application built for portfolio purposes.**  
+It transforms a simple static landing page into a more realistic product experience, focusing on UX, responsiveness, clean structure, and interactive features.
 
-![Preview da homepage da RiderCar](assets/images/ridercar-scroll.gif)
+---
 
-Demo: [rider-car.vercel.app](https://rider-car.vercel.app)
+## 🌐 Live Demo
 
-## Sobre o projeto
+🔗 https://rider-car.vercel.app
 
-Este projeto simula a interface de uma locadora moderna, com uma frota renderizada via JavaScript, busca por marca/preco/ano, simulacao de reserva, modo escuro e secoes pensadas para portfolio.
+---
 
-O objetivo principal foi deixar o projeto com uma apresentacao mais crivel para GitHub e recrutadores, mantendo a stack simples e acessivel.
+## 🎥 Preview
 
-## Funcionalidades
+![RiderCar Preview](assets/images/ridercar-scroll.gif)
 
-- Busca por marca, modelo, preco mensal maximo e ano minimo
-- Cards de carros renderizados por array JavaScript
-- Catalogo dedicado com 25 veiculos e filtros combinados
-- Botao "Alugar agora" com modal de simulacao
-- Favoritos com feedback visual
-- Formulario de contato com envio simulado
-- Modo escuro
-- Ano do rodape atualizado automaticamente
-- Textos reescritos para contexto real de aluguel
-- SEO basico com `meta description`, Open Graph e `alt` descritivos
-- Layout responsivo para mobile, tablet e desktop
+---
 
-## Tecnologias
+## 📊 Project Goal
 
-- HTML5
-- CSS3
-- JavaScript
-- Ionicons
-- Google Fonts
+To simulate a real-world car rental experience using only front-end technologies, focusing on usability, performance, and clean architecture.
 
-## Estrutura
+---
 
-```text
+## 📌 About the Project
+
+RiderCar simulates the interface of a modern car rental platform.
+
+The project focuses on delivering a **product-like experience using only front-end technologies**, including dynamic rendering, filtering logic, and UI interactions that mimic a real booking flow.
+
+This project was designed to showcase:
+
+- UI/UX thinking  
+- clean front-end architecture  
+- realistic content and interactions  
+- attention to detail (SEO, accessibility, responsiveness)
+
+---
+
+## ✨ Features
+
+- 🔍 Search by brand, model, max price and minimum year  
+- 🚗 Dynamic car listing rendered via JavaScript  
+- 📄 Dedicated catalog page with 25 vehicles  
+- ❤️ Favorites system with visual feedback  
+- 🛒 "Rent now" modal simulation  
+- 📬 Contact form (simulated submission)  
+- 🌙 Dark mode toggle  
+- 📱 Fully responsive layout (mobile, tablet, desktop)  
+- 🧠 Basic SEO (meta tags, Open Graph, alt descriptions)  
+- 🔄 Auto-updating footer year  
+
+---
+
+## 🛠 Tech Stack
+
+- HTML5  
+- CSS3  
+- JavaScript (Vanilla)  
+- Ionicons  
+- Google Fonts  
+
+---
+
+## 📂 Project Structure
+
+```bash
 .
-|-- index.html
-|-- catalogo.html
-|-- README.md
-`-- assets
-    |-- css/style.css
-    |-- js/cars.js
-    |-- js/script.js
-    |-- js/catalog.js
-    `-- images/
-```
-
-## Como rodar localmente
-
-1. Clone o repositorio:
-
-```bash
-git clone https://github.com/faellim/ridercar.git
-```
-
-2. Entre na pasta do projeto:
-
-```bash
-cd ridercar
-```
-
-3. Abra o arquivo `index.html` no navegador.
-
-Se quiser uma experiencia mais proxima de deploy, voce tambem pode usar uma extensao como Live Server no VS Code.
-
-## Melhorias aplicadas nesta versao
-
-- Reescrita completa dos textos genericos
-- Inclusao da secao "Sobre o projeto"
-- Padronizacao de capitalizacao e informacoes dos cards
-- Transformacao de links e botoes em acoes reais
-- Refino visual para parecer mais produto e menos template
-- Criacao de um catalogo completo com pagina propria
-- Melhor documentacao do repositorio
-
-## Sugestao de metadata para o GitHub
-
-Descricao:
-
-`Projeto front-end de locadora de carros com filtros, simulacao de aluguel, dark mode e layout responsivo para portfolio.`
-
-Website:
-
-`https://faellim.github.io/ridercar/`
-
-Topics:
-
-`html`
-`css`
-`javascript`
-`responsive-design`
-`landing-page`
-`frontend-project`
-`portfolio`
-`car-rental`
-`ui-design`
-
-## Aprendizados
-
-Durante a evolucao do projeto, os principais aprendizados foram:
-
-- como melhorar a percepcao de qualidade de um projeto com conteudo mais realista
-- como organizar melhor um front-end estatico para facilitar manutencao
-- como usar JavaScript para tornar a interface mais dinamica sem depender de backend
-- como aplicar detalhes de SEO e acessibilidade que valorizam um projeto no portfolio
-
-## Proximos passos
-
-- integrar um backend ou API para reservas reais
-- adicionar filtros por categoria e cidade
-- persistir tema e favoritos no `localStorage`
-- criar pagina individual para detalhes de cada carro
-- publicar com dominio proprio e customizar o social preview do GitHub
+├── index.html
+├── catalogo.html
+├── README.md
+└── assets
+    ├── css/style.css
+    ├── js/cars.js
+    ├── js/script.js
+    ├── js/catalog.js
+    └── images/
